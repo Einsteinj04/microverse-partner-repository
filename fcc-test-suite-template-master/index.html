@@ -8,19 +8,62 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1>Hello World</h1>
-    <!--
+    <div class="content">
+    <header>
+      <h1 id="title">Freecodecamp's scholarship</h1>
+      <p id="description">...Your first step to becoming a software enginner...</p>
+    </header>
+    <hr />
+    <main>
+      <form id="survey-form" action="#">
+        <label id="name-label">
+          Name: <input type="text" id="name" placeholder="Enter your name here" required />
+        </label>
+        <br />
+        <br />
+        <label id="email-label">
+          Email: <input type="email" id="email" placeholder="example@example.com" required />
+        </label>
+        <br />
+        <br />
+        <label id="number-label">
+          Age: <input type="number" id="number" placeholder="Your age" min="15" max="65" required />
+        </label>
+        <br />
+        <p style="font-size: 20px;color:brown;text-decoration:underline;">What's your current employmment status?</p>
+        <label><input type="radio" name="status" value="self-employed" checked />Self-employed</label>
+        <label><input type="radio" name="status" value="Student" />Student</label>
+        <label><input type="radio" name="status" value="unemployed" />Unemployed</label>
+        <label><input type="radio" name="status" value="parttime" />Part-time</label>
+        <label><input type="radio" name="status" value="fulltime" />Full-time</label>
+        <p style="font-size: 20px;color:brown;text-decoration:underline;">How did you get to hear of this scholarship?</p>
+        <label><input type="checkbox" value="full-time" checked />Twitter</label>
+        <label><input type="checkbox" value="facebook" />Facebook</label>
+        <label><input type="checkbox" value="whatsapp" />Whatsapp</label>
+        <label><input type="checkbox" value="news" />News-paper</label>
+        <label><input type="checkbox" value="others" />Other sources</label>
+        <label>
+          <br />
+          <label>
+            <p style="font-size: 20px;color:brown;text-decoration:underline;">How many hours can you spend in a week for learning?</p>
+            <select id="dropdown">
+              <option>6-12hrs</option>
+              <option>13-24hrs</option>
+              <option>25-31hrs</option>
+              <option>31hrs and above</option>
+            </select>
+          </label>
 
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+          <p style="font-size: 20px;color:brown;text-decoration:underline;">Tell us how this scholarship will benefit you</p>
+          <textarea rows="5" cols="30" placeholder="Write it here..." required></textarea>
+        </label>
+        <br/>
+        <footer>
+        <input type="submit" id="submit" value="SUBMIT" />
+        </footer>  
+      </form>
+    </main>
+  </div>
     <script  src="js/index.js"></script>
   </body>
 </html>

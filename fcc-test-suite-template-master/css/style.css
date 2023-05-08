@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  min-width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: radial-gradient(purple, black);
+  background-attachment:fixed;
+}
+header{
+  min-width: 200px;
+}
+h1{
+  font-size: 2rem;
+}
+.content {
+  background-image: linear-gradient(to bottom, burlywood 25%, cyan 70%);
+  width: 75%;
+  max-width: 500px;
+  height: auto;
+  min-width: 240px;
+  margin: 90px auto;
+  background-attachment: fixed;
+  opacity: 0.9;
+  border: 3px solid black;
+  border-radius: 50px;
+  background-attachment: scroll;
+/*   font-size: 100%; */
+  padding: 20px;
+}
+@media (max-width:400px){
+  h1{
+    font-size: 26px;
+  }
+  #description{
+    font-size: 14px
+  }
+  
+}
+
+header {
+  font-family: "Fira Sans", sans-serif;
+/*   font-size: 10; */
+  font-weight: 700;
+  text-align: center;
+}
+h1 + p {
+  font-style: italic;
+}
+hr {
+  border: 2px solid black;
+  background-color: black;
+}
+main {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+select {
+  width: 100px;
+  height: 30px;
+}
+input[type="number"] {
+  width: 180px;
+}
+input[type="submit"]{
+  display:block;
+  margin: 20px auto;
+  color:white;
+  background-color: black;
+}
